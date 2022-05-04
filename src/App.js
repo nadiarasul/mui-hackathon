@@ -1,24 +1,32 @@
-import logo from './logo.svg';
+import * as React from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+import SignIn from './components/SignIn';
+import Success from './components/Success';
+import ForgotPassword from './components/ForgotPassword';
+import Layout from './components/Layout';
+import { appTheme } from  './components/theme';
+
+const theme = createTheme(appTheme);
+
+theme.typography.h1 = {
+  fontSize: '1.25rem',
+}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+    <ThemeProvider theme={theme}>
+      <Layout>
+        <Routes>
+          <Route exact path="/" element={<SignIn />} />
+          <Route path="/success" element={<Success />} />
+          <Route path="/forgot-password" element={<ForgotPassword />} />
+        </Routes>
+      </Layout>
+    </ThemeProvider>
+    </BrowserRouter>
   );
 }
 
