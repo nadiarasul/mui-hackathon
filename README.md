@@ -1,3 +1,7 @@
+# Objective
+
+Testing theming and customization with Material UI Design System. 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
