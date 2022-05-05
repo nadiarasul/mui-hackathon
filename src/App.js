@@ -8,8 +8,11 @@ import ForgotPassword from './components/ForgotPassword';
 import Layout from './components/Layout';
 import { appTheme } from  './components/theme';
 
+// testing different ways of updating theme tokens
+// provide own theme from an import
 const theme = createTheme(appTheme);
 
+// update a one off token 
 theme.typography.h1 = {
   fontSize: '1.25rem',
 }

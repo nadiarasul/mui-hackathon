@@ -10,6 +10,7 @@ import Typography from '@mui/material/Typography';
 import { styled } from '@mui/material/styles';
 import SvgIcon from '@mui/material/SvgIcon';
 
+// create a custom icon
 function GoogleSVGIcon(props) {
   return (
     <SvgIcon {...props} viewBox="0 0 533.5 544.3">
