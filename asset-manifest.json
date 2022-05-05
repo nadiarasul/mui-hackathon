@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/mui-hackathon/static/css/main.4602624c.css",
-    "main.js": "/mui-hackathon/static/js/main.b23c0fe8.js",
+    "main.js": "/mui-hackathon/static/js/main.ed253cdf.js",
     "static/js/787.f80aad20.chunk.js": "/mui-hackathon/static/js/787.f80aad20.chunk.js",
     "static/media/blob-person.svg": "/mui-hackathon/static/media/blob-person.4089069ef8996269f953.svg",
     "index.html": "/mui-hackathon/index.html",
     "main.4602624c.css.map": "/mui-hackathon/static/css/main.4602624c.css.map",
-    "main.b23c0fe8.js.map": "/mui-hackathon/static/js/main.b23c0fe8.js.map",
+    "main.ed253cdf.js.map": "/mui-hackathon/static/js/main.ed253cdf.js.map",
     "787.f80aad20.chunk.js.map": "/mui-hackathon/static/js/787.f80aad20.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4602624c.css",
-    "static/js/main.b23c0fe8.js"
+    "static/js/main.ed253cdf.js"
   ]
 }
