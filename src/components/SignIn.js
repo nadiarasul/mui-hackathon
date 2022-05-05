@@ -95,7 +95,7 @@ function SignIn() {
       </form>
 
       <Box mt={3} textAlign='center'>
-        <Link href="/forgot-password">Forgot your password?</Link>
+        <Link href="/mui-hackathon/forgot-password">Forgot your password?</Link>
         <Divider>
           <DividerText>Or</DividerText>
         </Divider>
