@@ -21,7 +21,7 @@ function Layout({ children }) {
         <Grid item xs={12} sm={8} md={6}>
           <StyledBox>
             <Box mb={4}>
-              <img alt="League" src="/mui-hackathon/League.svg" />
+              <img alt="League" src={process.env.PUBLIC_URL + '/League.svg'} />
             </Box>
 
             { children }

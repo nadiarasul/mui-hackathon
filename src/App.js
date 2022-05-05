@@ -20,7 +20,7 @@ theme.typography.h1 = {
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <BrowserRouter basename="/mui-hackathon">
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Layout>
           <Routes>
             <Route exact path="/" element={<SignIn />} />

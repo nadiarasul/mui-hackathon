@@ -31,7 +31,7 @@ const DividerText = styled('p')`
     content: '';
     display: block;
     height: 1px;
-    background-color: ${({theme}) => {console.log(theme); return theme.palette.divider}};
+    background-color: ${({theme}) => theme.palette.divider};
     flex: 1;
     margin-right: 24px;
   }
@@ -58,7 +58,7 @@ function SignIn() {
     if(!user && !password) {
       setHasError(true);
     } else {
-      navigate("/success", { replace: true });
+      navigate('/success', { replace: true });
     }
   }
 
@@ -95,7 +95,7 @@ function SignIn() {
       </form>
 
       <Box mt={3} textAlign='center'>
-        <Link href="/mui-hackathon/forgot-password">Forgot your password?</Link>
+        <Link href={process.env.PUBLIC_URL + '/forgot-password'}>Forgot your password?</Link>
         <Divider>
           <DividerText>Or</DividerText>
         </Divider>
