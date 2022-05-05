@@ -23,9 +23,9 @@ function App() {
     <ThemeProvider theme={theme}>
       <Layout>
         <Routes>
-          <Route exact path="/" element={<SignIn />} />
-          <Route path="/success" element={<Success />} />
-          <Route path="/forgot-password" element={<ForgotPassword />} />
+          <Route exact path="/mui-hackathon" element={<SignIn />} />
+          <Route path="/mui-hackathon/success" element={<Success />} />
+          <Route path="/mui-hackathon/forgot-password" element={<ForgotPassword />} />
         </Routes>
       </Layout>
     </ThemeProvider>
