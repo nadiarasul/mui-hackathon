@@ -19,17 +19,17 @@ theme.typography.h1 = {
 
 function App() {
   return (
-    <BrowserRouter>
     <ThemeProvider theme={theme}>
-      <Layout>
-        <Routes>
-          <Route exact path="/mui-hackathon" element={<SignIn />} />
-          <Route path="/mui-hackathon/success" element={<Success />} />
-          <Route path="/mui-hackathon/forgot-password" element={<ForgotPassword />} />
-        </Routes>
-      </Layout>
+      <BrowserRouter basename="/mui-hackathon">
+        <Layout>
+          <Routes>
+            <Route exact path="/" element={<SignIn />} />
+            <Route path="/success" element={<Success />} />
+            <Route path="/forgot-password" element={<ForgotPassword />} />
+          </Routes>
+        </Layout>
+      </BrowserRouter>
     </ThemeProvider>
-    </BrowserRouter>
   );
 }
 
