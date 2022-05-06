@@ -28,7 +28,8 @@ export const appTheme = {
         root: {
           textTransform: 'none',
           paddingTop: 12,
-          paddingBottom: 12
+          paddingBottom: 12,
+          fontWeight: 600
         }
       }
     },
